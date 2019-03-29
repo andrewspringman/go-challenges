@@ -24,7 +24,7 @@ Two of Diamonds
 Ace of Clubs
 Jack of Clubs
 ```
-The trivial example in sortcards.go is not allowed.  You've actually got to do the sort.
+The trivial example in [sortcards.go](https://github.com/andrewspringman/go-challenges/blob/master/challenge-2/sortcards.go) is not allowed.  You've actually got to do the sort.
 
 ### Run tests with benchmarks
 
