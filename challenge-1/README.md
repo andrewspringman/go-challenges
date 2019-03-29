@@ -6,11 +6,7 @@ func EmptyInterface(in int) interface{}
 that returns
 - 42 when given 0
 - "Jesus!" when given 1
-- a struct {
-    x int
-    y int
-}
-containing {3,-1} when given 2 and
+- a struct with int fields x and y (in that order) containing {3,-1} when given 2 and
 - "FAIL" when given anything else
 
 Demonstrates mastery of the syntax to store different types in an empty interface.
