@@ -11,7 +11,7 @@ Three of Spades
 Jack of Clubs
 Ace of Clubs
 Two of Diamonds
-Queen of Diamons
+Queen of Diamonds
 ```
 Ace is high.  The suit order from highest to lowest is Spades, Hearts, Diamonds, Clubs.
 Two is called Two, Jack is called Jack, and there is no Joker.
@@ -19,7 +19,7 @@ Two is called Two, Jack is called Jack, and there is no Joker.
 For example, given the list above, the result should be.
 ```
 Three of Spades
-Queen of Diamons
+Queen of Diamonds
 Two of Diamonds
 Ace of Clubs
 Jack of Clubs
