@@ -4,38 +4,21 @@ import "testing"
 
 var tests = []struct {
 	input  int
-	verify func(interface{}) bool
+	output interface{}
 }{
-	{0, verify0},
-	{1, verify1},
-	{2, verify2},
-	{3, verifyFail},
-}
-
-func verify0(in interface{}) bool {
-	return (in == interface{}(42))
-}
-
-func verify1(in interface{}) bool {
-	return (in == interface{}("Jesus!"))
-}
-
-func verify2(in interface{}) bool {
-	xy := struct {
+	{0, interface{}(42)},
+	{1, interface{}("Jesus!")},
+	{2, interface{}(struct {
 		x int
 		y int
-	}{3, -1}
-	return (in == interface{}(xy))
-}
-
-func verifyFail(in interface{}) bool {
-	return (in == interface{}("FAIL"))
+	}{3, -1})},
+	{3, "FAIL"},
 }
 
 func TestEmptyInterface(t *testing.T) {
 	for _, test := range tests {
 		out := EmptyInterface(test.input)
-		if test.verify(out) == false {
+		if out != test.output {
 			t.Errorf("Input %d yielded the incorrect result.", test.input)
 		}
 	}
